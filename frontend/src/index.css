@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+.user-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.user-form input,
+.user-form button,
+.user-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px; 
+}
+
+.user-form input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.user-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-form button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 16px;
+  margin-top: -10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row > div {
+  flex: 1;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.user-table td {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.user-table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+.user-table tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.edit-button {
+  background-color: #ffdc00;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.edit-button:hover {
+  background-color: #dcbf00;
+}
+
+.actions-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-edit {
+  display: flex;
+  gap: 20px;
+}
+
+button.cancel-btn {
+  background: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .user-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
